@@ -1,0 +1,32 @@
+{
+  "foxpkg": "1.0",
+  "hostApiVersion": ">=1.0,<2.0",
+  "key": "cc.foxel.office",
+  "name": "Office",
+  "version": "1.0.0",
+  "description": "在窗口里查看 Word、Excel 和 PowerPoint 文件。",
+  "i18n": {
+    "zh": {
+      "name": "Office",
+      "description": "在窗口里查看 Word、Excel 和 PowerPoint 文件。"
+    },
+    "en": {
+      "name": "Office",
+      "description": "Views Word, Excel, and PowerPoint files."
+    }
+  },
+  "author": "Foxel",
+  "website": "https://foxel.cc",
+  "github": "https://github.com/Foxel-Studio/cc.foxel.office",
+  "license": "MIT",
+  "frontend": {
+    "entry": "frontend/index.js",
+    "styles": ["frontend/player.css"],
+    "icon": "frontend/icon.svg",
+    "publicDir": "frontend",
+    "openApp": false,
+    "supportedExts": ["docx", "xlsx", "xls", "csv", "pptx", "doc", "ppt"],
+    "defaultBounds": { "width": 1000, "height": 760 },
+    "useSystemWindow": true
+  }
+}

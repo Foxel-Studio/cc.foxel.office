@@ -1,0 +1,22 @@
+{
+  "name": "cc.foxel.office",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test",
+    "foxpkg": "vite build && python3 pack.py"
+  },
+  "dependencies": {
+    "docx-preview": "^0.3.6",
+    "pptx-preview": "^1.0.7",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.2"
+  }
+}
